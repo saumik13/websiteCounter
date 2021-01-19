@@ -27,10 +27,9 @@ function countdownTimer() {
 
     let now = new Date().getTime();
 
-    // Find the distance between now and the count down date
     let timeDifference = futureDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
+    // Converting from millis to appropriate units
     let days = Math.floor(milliTodays(timeDifference));
     let hours = Math.floor(milliTohours(timeDifference));
     let minutes = Math.floor(milliTominutes(timeDifference));
